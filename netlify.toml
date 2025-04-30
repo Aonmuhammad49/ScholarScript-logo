@@ -1,0 +1,16 @@
+[[redirects]]
+  from = "/home"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/old-page"
+  to = "/new-page"
+  status = 301
+
+# SPA fallback rule
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = true
